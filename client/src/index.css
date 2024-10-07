@@ -1,7 +1,7 @@
+@import "swiper/swiper-bundle.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "~swiper/swiper-bundle.css"; /* Nhập khẩu CSS cho Swiper */
 
 @layer base {
   :root {
