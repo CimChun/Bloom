@@ -112,9 +112,12 @@ function ShoppingHome() {
     dispatch(getFeatureImages());
   }, [dispatch]);
   const images = [
-    "https://res.cloudinary.com/dqnvkuji8/image/upload/v1726846887/csdijjtldtmyyqqrzwel.png",
-    "https://res.cloudinary.com/dqnvkuji8/image/upload/v1726810450/oscvfqo32khsxzxn054e.png",
-    "https://res.cloudinary.com/dqnvkuji8/image/upload/v1726664883/WEB_M%C3%B9i_5_tevmaw.png",
+    "https://res.cloudinary.com/dxkwzxyb5/image/upload/v1729875741/poster_fzzg2s.png",
+    "https://res.cloudinary.com/dxkwzxyb5/image/upload/v1729875738/poster_halloween_vaqckx.png",
+    "https://res.cloudinary.com/dxkwzxyb5/image/upload/v1729875741/poster_fzzg2s.png",
+    "https://res.cloudinary.com/dxkwzxyb5/image/upload/v1729875738/poster_halloween_vaqckx.png",
+    "https://res.cloudinary.com/dxkwzxyb5/image/upload/v1729875741/poster_fzzg2s.png",
+    "https://res.cloudinary.com/dxkwzxyb5/image/upload/v1729875738/poster_halloween_vaqckx.png",
   ];
   return (
     <div className="flex flex-col min-h-screen">
@@ -158,7 +161,7 @@ function ShoppingHome() {
         </Button>
         {/* Nút Xem Thêm */}
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-          <Button onClick={handleNavigateToBlog} className="bg-red-500 text-white text-lg py-7 px-12 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 hover:shadow-xl">
+          <Button onClick={handleNavigateToBlog} className="bg- text-white text-lg py-7 px-12 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 hover:shadow-xl">
             Tìm hiểu thêm <span style={{ paddingLeft: "50px" }}><FontAwesomeIcon icon={faArrowRight} /></span>
           </Button>
         </div>
@@ -171,11 +174,11 @@ function ShoppingHome() {
           <div className="flex flex-col justify-center items-start animate-fade-in-left">
             <h1 className="text-4xl font-bold mb-6 text-gray-800">Xịt Thơm Bloom</h1>
             <p className="text-lg text-gray-600 leading-relaxed" style={{ maxHeight: '300px', overflow: 'hidden' }}>
-              Nước xịt thơm Bloom nhẹ nhàng và thư thái, hương thơm trái cây tươi mát hòa quyện cùng những nốt hương hoa quyến rũ, mang lại cảm giác thư giãn và tươi mới cho tâm hồn bạn. Hãy để hương thơm của vỏ cam chanh thơm mát cùng với các loại hạt tự nhiên thổi bay mọi căng thẳng trong cuộc sống hàng ngày của bạn.
+            Đêm Halloween đã đến, hãy để Bloom Body Mist giúp bạn tỏa sáng trong phong cách bí ẩn và cuốn hút! Nhân dịp đặc biệt này, chúng tôi mang đến chương trình Mua 1 Tặng 1 cho tất cả các dòng sản phẩm Bloom Body Mist – thêm hương thơm, thêm sự tự tin cho bữa tiệc hoá trang của bạn. Ngoài ra, Bloom còn ưu đãi giảm 20% cho hóa đơn từ 500,000 VNĐ trở lên, giúp bạn dễ dàng sở hữu những hương thơm yêu thích mà không cần phải đắn đo.
+            <br />
               <br />
-              <br />
-              Khám phá thêm về sản phẩm và tận hưởng cảm giác tự tin mà nó mang lại. Bạn đã sẵn sàng để trải nghiệm một hành trình mới với Bloom chưa? Hãy cùng chúng tôi tìm hiểu và cảm nhận sự khác biệt từ những giọt nước xịt thơm này!
-            </p>
+              Hãy nhanh tay mua sắm trước khi Halloween kết thúc và cùng Bloom tạo nên những khoảnh khắc đáng nhớ. Đừng bỏ lỡ cơ hội này để bùng nổ sự quyến rũ, huyền bí trong mùa lễ hội!
+              </p>
             <br />
             <Button variant="outline" className="self-start bg-red-500 text-white text-lg py-7 px-12 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 hover:shadow-xl" onClick={() => handleNavigateToListingPage("Xịt Thơm", "category")}>
               Khám Phá Ngay

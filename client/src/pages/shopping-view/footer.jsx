@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa'; // Import icon từ react-icons
+import { FaFacebookF, FaInstagram} from 'react-icons/fa'; // Import icon từ react-icons
 
 function Footer() {
   return (
@@ -9,8 +9,8 @@ function Footer() {
           <div className="mb-6 md:mb-0">
             <h3 className="text-xl font-bold">Liên Hệ</h3>
             <p>Địa chỉ: Đại Học FPT Hà Nội</p>
-            <p>Điện thoại: (012) 345-6789-JQK</p>
-            <p>Email: cimchun.me@bloom.com</p>
+            <p>Điện thoại: 038 273 9389</p>
+            <p>Email: bloom.bodymist@gmail.com</p>
           </div>
           <div className="mb-6 md:mb-0">
             <h3 className="text-xl font-bold">Thông Tin</h3>
@@ -22,18 +22,13 @@ function Footer() {
           <div className="mb-6 md:mb-0">
             <h3 className="text-xl font-bold">Theo Dõi Chúng Tôi</h3>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/BLOOMbodymist" target="_blank" rel="noopener noreferrer">
                 <FaFacebookF className="w-6 h-6" />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.threads.net/@bloombodymist?invite=0" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="w-6 h-6" />
               </a>
-              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                <FaTwitter className="w-6 h-6" />
-              </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                <FaLinkedinIn className="w-6 h-6" />
-              </a>
+             
             </div>
           </div>
         </div>

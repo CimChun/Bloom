@@ -146,7 +146,7 @@ function ProductDetailsDialog({ open, setOpen, productDetails }) {
           <div className="mt-5 mb-5">
             {productDetails?.totalStock === 0 ? (
               <Button className="w-full opacity-60 cursor-not-allowed">
-                Out of Stock
+                Sản phẩm đã ngừng kinh doanh
               </Button>
             ) : (
               <Button
