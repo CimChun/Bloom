@@ -18,7 +18,7 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { Avatar, AvatarFallback } from "../ui/avatar";
-import { logoutUser, resetTokenAndCredentials } from "@/store/auth-slice";
+import { logoutUser } from "@/store/auth-slice";
 import UserCartWrapper from "./cart-wrapper";
 import { useEffect, useState } from "react";
 import { fetchCartItems } from "@/store/shop/cart-slice";
@@ -54,7 +54,7 @@ function MenuItems() {
       {shoppingViewHeaderMenuItems.map((menuItem) => (
         <Label
           onClick={() => handleNavigate(menuItem)}
-          className="text-sm font-medium cursor-pointer"
+          className="text-lg font-medium cursor-pointer" // Tăng kích thước chữ ở đây
           key={menuItem.id}
         >
           {menuItem.label}
@@ -72,18 +72,12 @@ function HeaderRightContent() {
   const dispatch = useDispatch();
 
   function handleLogout() {
-    // dispatch(logoutUser());
-    dispatch(resetTokenAndCredentials());
-    sessionStorage.clear()
-    navigate('auth/login')
-
+    dispatch(logoutUser());
   }
 
   useEffect(() => {
     dispatch(fetchCartItems(user?.id));
   }, [dispatch]);
-
-  (cartItems, "sangam");
 
   return (
     <div className="flex lg:items-center lg:flex-row flex-col gap-4">
@@ -143,7 +137,10 @@ function ShoppingHeader() {
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="flex h-30 items-center justify-between px-4 md:px-6">
         <Link to="/shop/home" className="flex items-center gap-2">
-          <img src="https://res.cloudinary.com/dqnvkuji8/image/upload/v1727504243/ff_wpx0wk.png" className="h-20 w-25" />
+          <img
+            src="https://res.cloudinary.com/dxkwzxyb5/image/upload/v1729874951/Untitled-4_1_sji0fp.png"
+            className="h-24 w-30" // Tăng kích thước logo ở đây
+          />
         </Link>
         <Sheet>
           <SheetTrigger asChild>
